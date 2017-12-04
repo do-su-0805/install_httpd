@@ -22,6 +22,10 @@ one step for install httpd (easy settings)
 
 * 有無判定を入れていますが、 `gcc` `g++` `tar` `curl` `make` コマンドが必要です。
 
+* 有無判定ができなかったので入れませんが、apr-util を build する時に、 `expat.h` が必要です。
+
+    * 各ディストリビューションに合わせてインストールしておいてください。 
+
 # スクリプト構造
 
 ```
