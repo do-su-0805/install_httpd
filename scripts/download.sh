@@ -14,14 +14,13 @@ mkdir $DOWNLOAD_DIR && cd $DOWNLOAD_DIR
 
 # download scrpkgs
 
-#curl -O "http://ftp.jaist.ac.jp/pub/apache/apr/apr-${APR_VERSION}.tar.gz"
-echo "http://ftp.jaist.ac.jp/pub/apache/apr/apr-${APR_VERSION}.tar.gz"
+curl -O "http://ftp.jaist.ac.jp/pub/apache/apr/apr-${APR_VERSION}.tar.gz"
 
-#curl -O "http://ftp.jaist.ac.jp/pub/apache/apr/apr-util-${APRUTIL_VERSION}.tar.gz"
-echo "http://ftp.jaist.ac.jp/pub/apache/apr/apr-util-${APRUTIL_VERSION}.tar.gz"
+curl -O "http://ftp.jaist.ac.jp/pub/apache/apr/apr-util-${APRUTIL_VERSION}.tar.gz"
 
-#curl -O "https://ftp.pcre.org/pub/pcre/pcre-${PCRE_VERSION}.tar.gz"
-echo "https://ftp.pcre.org/pub/pcre/pcre-${PCRE_VERSION}.tar.gz"
+curl -O "https://ftp.pcre.org/pub/pcre/pcre-${PCRE_VERSION}.tar.gz"
 
-#curl -O "http://ftp.jaist.ac.jp/pub/apache/httpd/httpd-${HTTPD_VERSION}.tar.gz"
-echo "http://ftp.jaist.ac.jp/pub/apache/httpd/httpd-${HTTPD_VERSION}.tar.gz"
+curl -O "http://ftp.jaist.ac.jp/pub/apache/httpd/httpd-${HTTPD_VERSION}.tar.gz"
+
+ls -l .
+

@@ -2,9 +2,15 @@
 
 ## checking for using this script
 
-CURL=`which curl`
+which curl > /dev/null
 if [ $? -ne 0 ]; then
   "Error: Not found CURL. please install CURL"
+  exit 1;
+fi
+
+which tar > /dev/null
+if [ $? -ne 0 ]; then
+  "Error: Not found CURL. please install tar"
   exit 1;
 fi
 
@@ -14,6 +20,5 @@ echo $WORKING_DIR
 cd $WORKING_DIR/scripts
 ./download.sh
 
-./pre_build.sh
+./build.sh
 
-./install.sh
