@@ -2,7 +2,6 @@
 
 WORKING_DIR=$(cd $(dirname $0); pwd)
 DOWNLOAD_DIR="$(cd $WORKING_DIR/..;pwd)/src"
-echo $DOWNLOAD_DIR
 
 . ./setenv.sh
 
@@ -22,5 +21,8 @@ curl -O "https://ftp.pcre.org/pub/pcre/pcre-${PCRE_VERSION}.tar.gz"
 
 curl -O "http://ftp.jaist.ac.jp/pub/apache/httpd/httpd-${HTTPD_VERSION}.tar.gz"
 
-ls -l .
-
+cat << EOF
+############################
+### download.sh finished ###
+############################
+EOF

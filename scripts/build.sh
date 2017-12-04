@@ -39,5 +39,12 @@ cd httpd-${HTTPD_VERSION}
 ./configure --prefix=${INSTALL_DIR}/httpd-${HTTPD_VERSION} \
             --with-apr=${INSTALL_DIR}/apr-${APR_VERSION} \
             --with-apr-util=${INSTALL_DIR}/apr-util-${APRUTIL_VERSION} \
-            --with-pcre=${INSTALL_DIR}/pcre-${PCRE_VERSION}/bin/pcre-config
+            --with-pcre=${INSTALL_DIR}/pcre-${PCRE_VERSION}/bin/pcre-config \
+            --enable-so
 make && make install
+
+cat << EOF
+#########################
+### build.sh finished ###
+#########################
+EOF

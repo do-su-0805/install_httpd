@@ -1,6 +1,12 @@
 #!/bin/sh
 
-## checking for using this script
+cat << EOF
+################################
+### install_httpd.sh started ###
+################################
+EOF
+
+# checking for using this script
 
 which curl > /dev/null
 if [ $? -ne 0 ]; then
@@ -10,7 +16,13 @@ fi
 
 which tar > /dev/null
 if [ $? -ne 0 ]; then
-  "Error: Not found CURL. please install tar"
+  "Error: Not found tar. please install tar"
+  exit 1;
+fi
+
+which gcc > /dev/null
+if [ $? -ne 0 ]; then
+  "Error: Not found gcc. please install gcc"
   exit 1;
 fi
 
@@ -22,3 +34,8 @@ cd $WORKING_DIR/scripts
 
 ./build.sh
 
+cat << EOF
+#################################
+### install_httpd.sh finished ###
+#################################
+EOF
