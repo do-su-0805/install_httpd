@@ -12,7 +12,11 @@ one step for install httpd (easy settings)
 * `install_httpd.sh` を実行します。
 
     * 強制的に、一つ上のフォルダに、 `httpd_(その時の指定version)` フォルダを作成します。
-
+    ```
+    (target dir)/
+    ├── httpd-2.4.29
+    └── install_httpd
+    ```
         * 指定version は、`setenv.sh` に記載されています。
 
 # スクリプト構造
