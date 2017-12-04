@@ -18,6 +18,9 @@ one step for install httpd (easy settings)
     ├── httpd-2.4.29
     └── install_httpd
     ```
+# 注意
+
+* 有無判定を入れていますが、 `gcc` `tar` `curl` コマンドが必要です。
 
 # スクリプト構造
 
