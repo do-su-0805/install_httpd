@@ -26,9 +26,15 @@ if [ $? -ne 0 ]; then
   exit 1;
 fi
 
+which g++ > /dev/null
+if [ $? -ne 0 ]; then
+  "Error: Not found g++. please install g++"
+  exit 1;
+fi
+
 which make > /dev/null
 if [ $? -ne 0 ]; then
-  "Error: Not found gcc. please install gcc"
+  "Error: Not found make. please install make"
   exit 1;
 fi
 

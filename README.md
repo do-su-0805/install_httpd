@@ -20,7 +20,7 @@ one step for install httpd (easy settings)
     ```
 # 注意
 
-* 有無判定を入れていますが、 `gcc` `tar` `curl` `make` コマンドが必要です。
+* 有無判定を入れていますが、 `gcc` `g++` `tar` `curl` `make` コマンドが必要です。
 
 # スクリプト構造
 
