@@ -18,6 +18,22 @@ one step for install httpd (easy settings)
     ├── httpd-2.4.29
     └── install_httpd
     ```
+
+* httpd.conf を編集します。
+
+    * 場所は、インストール先の `httpd-(version)/conf/httpd.conf` です
+    * `Listen ` のあとをお好きなポート/お好きなIPに。
+    * (すでに動いている場合は、) httpd とかを止めておくといいかもしれません。
+         * 要はIP被らずにポートも被らなければOKです。
+
+* 起動させます。
+
+    ```
+    $ sudo ../httpd-2.4.29/httpd-2.4.29/bin/httpd
+    $ curl -s localhost
+    <html><body><h1>It works!</h1></body></html>
+    ```
+
 # 注意
 
 * 有無判定を入れていますが、 `gcc` `g++` `tar` `curl` `make` コマンドが必要です。
@@ -25,6 +41,10 @@ one step for install httpd (easy settings)
 * 有無判定ができなかったので入れませんが、apr-util を build する時に、 `expat.h` が必要です。
 
     * 各ディストリビューションに合わせてインストールしておいてください。 
+    
+        * ubuntu の場合は `sudo apt install libexpat1-dev`
+
+        * CentOS の場合は、 `sudo yum install expat-devel`
 
 # スクリプト構造
 
